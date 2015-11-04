@@ -55,7 +55,7 @@
         "description": "Size of the empty data disk in GB"
       }
     }
-    },
+  },
   "variables": {
     "imagePublisher": "MicrosoftWindowsServer",
     "imageOffer": "WindowsServer",
@@ -73,7 +73,7 @@
     "virtualNetworkName": "MyVNET",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
-        "dataDisk1VhdName": "[concat('http://',parameters('newStorageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('vmName'),'dataDisk1.vhd')]"
+    "dataDisk1VhdName": "[concat('http://',parameters('newStorageAccountName'),'.blob.core.windows.net/',variables('vmStorageAccountContainerName'),'/',variables('vmName'),'dataDisk1.vhd')]"
   },
   "resources": [
     {
@@ -176,9 +176,8 @@
             },
             "caching": "ReadWrite",
             "createOption": "FromImage"
-          }
-        },
-        "dataDisks": [
+          },
+          "dataDisks": [
             {
               "name": "datadisk1",
               "diskSizeGB": "[parameters('sizeOfDiskInGB')]",
