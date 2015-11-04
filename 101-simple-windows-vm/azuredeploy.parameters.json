@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "newStorageAccountName": {
-      "value": "nvstore2"
+      "value": "nvstore3"
     },
     "adminUsername": {
       "value": "admin123"
@@ -12,7 +12,7 @@
       "value": "Passw0rd!"
     },
     "dnsNameForPublicIP": {
-      "value": "nv98765"
+      "value": "nv987650"
 },
     "location": {
       "value": "West US"
